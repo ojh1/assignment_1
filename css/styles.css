@@ -43,10 +43,13 @@ div {
   width: 100%;
   text-align: center; }
 
-img {
+img, .img2 {
   width: 300px;
   padding: 10px;
   transition: all ease; }
+
+.img2 {
+  border: 1px dashed; }
 
 footer {
   width: 750px;

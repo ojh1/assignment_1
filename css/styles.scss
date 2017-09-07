@@ -7,6 +7,12 @@
  $fontfamily: sans-serif;
  $specialwidth: 750px;
 
+ //Mixin
+ @mixin div($w, $ta){
+	 width: $w;
+	text-align: $ta;
+ }
+
 #wrapper {width: 100%; background-color: $wrapperbglighter;}
 
 h1 {text-align: center; color: $head1color;}
@@ -26,14 +32,16 @@ nav {
 }	
 
 div{
-	width: 100%;
-	text-align: center;
+	@include div(100%, center);
 }
 img{		
 	width: 300px;
 	padding: 10px;
 	transition: all ease;
 }
-//img :hover {transform: scale(2, 2);}
+.img2{
+	border: 1px dashed;
+	@extend img;
+}
 
 footer {width: $specialwidth; margin: 0 auto; padding: 10px 0; background-color: #888888; text-align: center; color: white; clear: both; font-family: $fontfamily;}
