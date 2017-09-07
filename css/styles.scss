@@ -1,11 +1,13 @@
  //SASS Variables
  $head1color: purple;
  $wrapperbg: lightgray;
+ $wrapperbglighter: lighten($wrapperbg, 10%);
  $navbgcolor: pink;
+ $navbgcolordarker: darken($navbgcolor, 20%);
  $fontfamily: sans-serif;
  $specialwidth: 750px;
 
-#wrapper {width: 100%; background-color: $wrapperbg;}
+#wrapper {width: 100%; background-color: $wrapperbglighter;}
 
 h1 {text-align: center; color: $head1color;}
 	
@@ -16,13 +18,12 @@ li {display: inline; margin-left: 0; padding-left: 0; margin: 6px; text-align: c
 nav {
 	width: $specialwidth;
 	margin: 0 auto;
-    text-align: center;
-	}	
-
-nav ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; text-align: center; background-color: $navbgcolor; }
-nav li {float: left; font-size: 14px; text-align: center;}
-nav li a {display: block; color: white; text-align: center; padding: 10px; text-decoration: none;}
-
+	text-align: center;
+	ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; text-align: center; background-color: $navbgcolordarker; }
+	li {float: left; font-size: 14px; text-align: center;
+		a {display: block; color: white; text-align: center; padding: 10px; text-decoration: none;}
+	}
+}	
 
 div{
 	width: 100%;
@@ -33,6 +34,6 @@ img{
 	padding: 10px;
 	transition: all ease;
 }
-img :hover {transform: scale(2, 2);}
+//img :hover {transform: scale(2, 2);}
 
 footer {width: $specialwidth; margin: 0 auto; padding: 10px 0; background-color: #888888; text-align: center; color: white; clear: both; font-family: $fontfamily;}

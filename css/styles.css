@@ -1,6 +1,6 @@
 #wrapper {
   width: 100%;
-  background-color: lightgray; }
+  background-color: #ededed; }
 
 h1 {
   text-align: center;
@@ -21,26 +21,23 @@ nav {
   width: 750px;
   margin: 0 auto;
   text-align: center; }
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  text-align: center;
-  background-color: pink; }
-
-nav li {
-  float: left;
-  font-size: 14px;
-  text-align: center; }
-
-nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none; }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #ff5a77; }
+  nav li {
+    float: left;
+    font-size: 14px;
+    text-align: center; }
+    nav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none; }
 
 div {
   width: 100%;
@@ -50,9 +47,6 @@ img {
   width: 300px;
   padding: 10px;
   transition: all ease; }
-
-img :hover {
-  transform: scale(2, 2); }
 
 footer {
   width: 750px;
