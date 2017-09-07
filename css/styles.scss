@@ -1,22 +1,28 @@
- 
-#wrapper {width: 100% }
+ //SASS Variables
+ $head1color: purple;
+ $wrapperbg: lightgray;
+ $navbgcolor: pink;
+ $fontfamily: sans-serif;
+ $specialwidth: 750px;
 
-h1 {text-align: center;}
+#wrapper {width: 100%; background-color: $wrapperbg;}
+
+h1 {text-align: center; color: $head1color;}
 	
-h2 {text-align: center;}
+h2 {text-align: center; font-family: $fontfamily;}
 	
 li {display: inline; margin-left: 0; padding-left: 0; margin: 6px; text-align: center;}
 	
 nav {
-	width: 750px;
+	width: $specialwidth;
 	margin: 0 auto;
     text-align: center;
 	}	
 
-nav ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: pink; }
-nav li {float: left; font-size: 14px;}
+nav ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; text-align: center; background-color: $navbgcolor; }
+nav li {float: left; font-size: 14px; text-align: center;}
 nav li a {display: block; color: white; text-align: center; padding: 10px; text-decoration: none;}
-/*nav li a:hover{background-color: #888888;}*/
+
 
 div{
 	width: 100%;
@@ -29,4 +35,4 @@ img{
 }
 img :hover {transform: scale(2, 2);}
 
-footer {width: 750px; margin: 0 auto; padding: 10px 0; background-color: #888888; text-align: center; color: white; clear: both; }
+footer {width: $specialwidth; margin: 0 auto; padding: 10px 0; background-color: #888888; text-align: center; color: white; clear: both; font-family: $fontfamily;}

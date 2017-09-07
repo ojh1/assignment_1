@@ -1,11 +1,14 @@
 #wrapper {
-  width: 100%; }
+  width: 100%;
+  background-color: lightgray; }
 
 h1 {
-  text-align: center; }
+  text-align: center;
+  color: purple; }
 
 h2 {
-  text-align: center; }
+  text-align: center;
+  font-family: sans-serif; }
 
 li {
   display: inline;
@@ -24,11 +27,13 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  text-align: center;
   background-color: pink; }
 
 nav li {
   float: left;
-  font-size: 14px; }
+  font-size: 14px;
+  text-align: center; }
 
 nav li a {
   display: block;
@@ -37,7 +42,6 @@ nav li a {
   padding: 10px;
   text-decoration: none; }
 
-/*nav li a:hover{background-color: #888888;}*/
 div {
   width: 100%;
   text-align: center; }
@@ -57,6 +61,7 @@ footer {
   background-color: #888888;
   text-align: center;
   color: white;
-  clear: both; }
+  clear: both;
+  font-family: sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */
