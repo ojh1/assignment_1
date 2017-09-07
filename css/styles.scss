@@ -1,17 +1,19 @@
- //SASS Variables
- $head1color: purple;
- $wrapperbg: lightgray;
- $wrapperbglighter: lighten($wrapperbg, 10%);
- $navbgcolor: pink;
- $navbgcolordarker: darken($navbgcolor, 20%);
- $fontfamily: sans-serif;
- $specialwidth: 750px;
+//SASS Variables
+$head1color: purple;
+$wrapperbg: lightgray;
+$navbgcolor: pink;
+$fontfamily: sans-serif;
+$specialwidth: 750px;
 
- //Mixin
- @mixin div($w, $ta){
-	 width: $w;
-	text-align: $ta;
- }
+//SASS built-in functions
+$wrapperbglighter: lighten($wrapperbg, 10%);
+$navbgcolordarker: darken($navbgcolor, 20%);
+
+//Mixin
+@mixin div($w, $ta){
+		width: $w;
+		text-align: $ta;
+}
 
 #wrapper {width: 100%; background-color: $wrapperbglighter;}
 
