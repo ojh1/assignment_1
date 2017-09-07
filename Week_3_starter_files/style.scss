@@ -1,0 +1,98 @@
+//VARIABLES
+$color-base: #696;
+$color-background: lighten($color-base, 40);
+$color-dark: darken($color-base, 20);
+$color-accent: saturate($color-base, 20);
+$color-highlight: lighten(saturate($color-base, 40), 20);
+
+$color-analogous-base: #966;
+$color-analogous-background: lighten($color-analogous-base, 40);
+$color-analogous-dark: darken($color-analogous-base, 20);
+$color-analogous-accent: saturate(adjust-color($color-analogous-base, $hue:30), 20);
+$color-analogous-highlight: lighten(saturate(adjust-color($color-analogous-base, $hue:330), 40), 20);
+
+$color-complimentary-base: #336;
+$color-complimentary-background: lighten($color-complimentary-base, 40);
+$color-complimentary-dark: darken($color-complimentary-base, 20);
+$color-complimentary-accent: saturate(adjust-color($color-complimentary-base, $hue:180), 20);
+$color-complimentary-highlight: lighten(saturate(adjust-color($color-complimentary-base, $hue:180), 40), 20);
+
+
+
+//MONOCHROME STYLES
+
+#monochrome {
+    .chip {
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid #000;
+        display: inline-block;
+        background: $color-base;
+        &:nth-of-type(2){
+            background: $color-background;
+        }
+        &:nth-of-type(3){
+            background: $color-dark;
+        }
+        &:nth-of-type(4){
+            background: $color-accent;
+        }
+        &:nth-of-type(5){
+            background: $color-highlight;
+        }
+        
+    }
+}
+
+
+//ANALOGOUS STYLES
+
+#analogous {
+    .chip {
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid #000;
+        display: inline-block;
+        background: $color-analogous-base;
+        &:nth-of-type(2){
+            background: $color-analogous-background;
+        }
+        &:nth-of-type(3){
+            background: $color-analogous-dark;
+        }
+        &:nth-of-type(4){
+            background: $color-analogous-accent;
+        }
+        &:nth-of-type(5){
+            background: $color-analogous-highlight;
+        }
+        
+    }
+}
+
+
+
+//COMPLIMENTARY STYLES
+
+#complimentary {
+    .chip {
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid #000;
+        display: inline-block;
+        background: $color-complimentary-base;
+        &:nth-of-type(2){
+            background: $color-complimentary-background;
+        }
+        &:nth-of-type(3){
+            background: $color-complimentary-dark;
+        }
+        &:nth-of-type(4){
+            background: $color-complimentary-accent;
+        }
+        &:nth-of-type(5){
+            background: $color-complimentary-highlight;
+        }
+        
+    }
+}

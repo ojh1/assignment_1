@@ -1,0 +1,39 @@
+//VARIABLES - global scope
+$default-size: 16px;
+$default-font: Helvetica, sans-serif;
+$default-color: #060;
+$default-background: #c0ebc0;
+
+
+
+//STYLES
+#content{
+    width: 30rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em 0;
+    font: $default-size $default-font;
+    color: $default-color;
+    background: $default-background;   
+}
+
+h1 {
+    font-size: $default-size * 3;
+}
+
+.icon{
+    $color-icon: #f5f536;   //local scope
+    $default-size: 10px;  //local scope
+    font-size: $default-size * 3;
+    line-height: $default-size * 4;
+    display: inline-block;
+    width: $default-size * 4;
+    height: $default-size * 4;
+    background: $color-icon;
+}
+
+
+p{
+    //background: $color-icon;
+    font-size: $default-size;
+}

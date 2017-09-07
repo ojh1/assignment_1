@@ -1,0 +1,32 @@
+ 
+#wrapper {width: 100% }
+
+h1 {text-align: center;}
+	
+h2 {text-align: center;}
+	
+li {display: inline; margin-left: 0; padding-left: 0; margin: 6px; text-align: center;}
+	
+nav {
+	width: 750px;
+	margin: 0 auto;
+    text-align: center;
+	}	
+
+nav ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: pink; }
+nav li {float: left; font-size: 14px;}
+nav li a {display: block; color: white; text-align: center; padding: 10px; text-decoration: none;}
+/*nav li a:hover{background-color: #888888;}*/
+
+div{
+	width: 100%;
+	text-align: center;
+}
+img{		
+	width: 300px;
+	padding: 10px;
+	transition: all ease;
+}
+img :hover {transform: scale(2, 2);}
+
+footer {width: 750px; margin: 0 auto; padding: 10px 0; background-color: #888888; text-align: center; color: white; clear: both; }

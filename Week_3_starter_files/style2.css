@@ -1,0 +1,24 @@
+#content {
+  width: 30rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em 0;
+  font: 16px Helvetica, sans-serif;
+  color: #060;
+  background: #c0ebc0; }
+
+h1 {
+  font-size: 48px; }
+
+.icon {
+  font-size: 30px;
+  line-height: 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #f5f536; }
+
+p {
+  font-size: 16px; }
+
+/*# sourceMappingURL=style2.css.map */
